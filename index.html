@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Form</title>
+    <!-- Adding internal CSS for styling the form -->
+    <style>
+        /* Style the form container */
+        #comment-form {
+            width: 300px;
+            margin: auto;
+        }
+        
+    
+        #comment-form input,
+        #comment-form textarea,
+        #comment-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="toggleCommentContainer()">Leave a Comment</button> 
+
+    <form id="comment-form">
+        <input id="email" type="email" name="email" placeholder="Email" required value="derrickmal123@gmail.com" readonly>
+        <input id="slide_name" type="text" name="slide_name" placeholder="Slide Name" value="dummy_slide_name" readonly>
+        <textarea id="comment" name="comment" placeholder="Comment" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
